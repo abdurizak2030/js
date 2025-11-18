@@ -16,4 +16,5 @@ const greet = function(a, b) {
 
 
 console.log(add(5, 7));     // Output: 12
+
 console.log(add(100, 250)); // Output: 350

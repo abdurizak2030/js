@@ -1,11 +1,19 @@
-let x = 7;
-let y = 3;
+
+//function addition
+function add(a, b) {
+  return a + b;
+}
+
+console.log(add(2, 3));    // Output: 5
+console.log(add(10, 20));  // Output: 30
+console.log(add(5, 5));  // Output: 10
 
 
-console.log(x + y );
-console.log(x - y );
-console.log(x * y );
-console.log(x++ );
-console.log(++x );
-console.log(y-- );
-console.log(--y );
+//function  expression
+const greet = function(a, b) {
+  return a + b;
+};
+
+
+console.log(add(5, 7));     // Output: 12
+console.log(add(100, 250)); // Output: 350

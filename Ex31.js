@@ -1,21 +1,20 @@
-function operation (a, b, callback) {
-    return callback(a, b);
-}   
-function add(x, y) {
-    return x + y;
-}
-function multiply(x, y) {
-    return x * y;
-}
-function subtract(x, y) {
-    return x - y;
-}
-function divide(x, y) {
-    return x / y;
-}
+// user requst
+async function fetchdata () {
+    
+    try{ 
+        console.log("starting data")
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
 
+        if(!response.ok){
+             throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+     const data = response.json();
+     console.log(data)
+      
 
-console.log(operation(5, 3, add));
-console.log(operation(5, 3, multiply));
-console.log(operation(5, 3, subtract));
-console.log(operation(6, 3, divide));
+    } catch (errore) {
+console.log(errore)
+    }
+
+}
+fetchdata ()
